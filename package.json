@@ -1,1 +1,19 @@
-$ heroku buildpacks:set heroku/python
+{
+  "name": "ytbrqwe",
+  "repository": "https://github.com/srj7/Flask-YouTube",
+  "keywords": [
+    "heroku",
+    "youtube-dl",
+    "rest-api",
+    "python"
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/stomita/heroku-buildpack-phantomjs.git"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "success_url": "/api/version",
+  "
